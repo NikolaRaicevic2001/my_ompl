@@ -1,18 +1,12 @@
 #!/usr/bin/env python
 
-
-
-# Author: Mark Moll
-
 try:
    from ompl import base as ob
    from ompl import geometric as og
 except ImportError:
-   # if the ompl module is not in the PYTHONPATH assume it is installed in a
-   # subdirectory of the parent directory called "py-bindings."
    from os.path import abspath, dirname, join
    import sys
-   sys.path.insert(0, join(dirname(dirname(abspath(__file__))), 'py-bindings'))
+   sys.path.insert(0, '/home/erl-tianyu/Nikola_ws/ros2_ws/src/ompl-1.6.0/py-bindings')
    from ompl import base as ob
    from ompl import geometric as og
 
@@ -24,12 +18,12 @@ def isStateValid(state):
 
 def planWithSimpleSetup():
    # create an SE2 state space
-   space = ob.SE2StateSpace()
+   space = ob.SE3StateSpace()
 
    # set lower and upper bounds
-   bounds = ob.RealVectorBounds(2)
-   bounds.setLow(-1)
-   bounds.setHigh(1)
+   bounds = ob.RealVectorBounds(3)
+   bounds.setLow(-10)
+   bounds.setHigh(10)
    space.setBounds(bounds)
 
    # create a simple setup object
@@ -40,15 +34,23 @@ def planWithSimpleSetup():
    # we can pick a random start state...
    start.random()
    # ... or set specific values
-   start().setX(.5)
+   # start().setX(50)
+   # start().setY(.5)
+   # start().setZ(.5)
+   # start().rotation().setAxisAngle(1, 0, 0, 0)
 
    goal = ob.State(space)
    # we can pick a random goal state...
    goal.random()
    # ... or set specific values
-   goal().setX(-.5)
+   # goal().setX(-0.5)
+   # goal().setY(-50)
+   # goal().setZ(0.5)
+   # goal().rotation().setAxisAngle(1, 0, 0, 0)
 
    ss.setStartAndGoalStates(start, goal)
+
+   ss.setPlanner(og.RRTConnect(ss.getSpaceInformation()))
 
    # this will automatically choose a default planner with
    # default parameters
@@ -56,10 +58,9 @@ def planWithSimpleSetup():
 
    if solved:
        # try to shorten the path
-       ss.simplifySolution()
+      #  ss.simplifySolution()
        # print the simplified path
        print(ss.getSolutionPath())
-
 
 def planTheHardWay():
    # create an SE2 state space
@@ -78,7 +79,7 @@ def planTheHardWay():
    start.random()
    # create a random goal state
    goal = ob.State(space)
-   goal.random()
+   goal.random() 
    # create a problem instance
    pdef = ob.ProblemDefinition(si)
    # set the start and goal states
@@ -108,5 +109,5 @@ def planTheHardWay():
 if __name__ == "__main__":
    planWithSimpleSetup()
    print("")
-   planTheHardWay()
+   # planTheHardWay()
 
