@@ -1,0 +1,2 @@
+/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/install/my_ompl/lib/my_ompl/testRigidBodyPlanning
+/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/install/my_ompl/lib/my_ompl/testStateSampling

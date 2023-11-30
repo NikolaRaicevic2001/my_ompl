@@ -1,0 +1,12 @@
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl
+[35m[1mConsolidate compiler generated dependencies of target testRigidBodyPlanning[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/testStateSampling.dir/src/StateSampling.cpp.o[0m
+[ 75%] Built target testRigidBodyPlanning
+[100%] [32m[1mLinking CXX executable /home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/bin/testStateSampling[0m
+[100%] Built target testStateSampling
+-- Install configuration: "Release"
+-- Up-to-date: /home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/install/my_ompl/lib/my_ompl/testRigidBodyPlanning
+-- Installing: /home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/install/my_ompl/lib/my_ompl/testStateSampling
+-- Set runtime path of "/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/install/my_ompl/lib/my_ompl/testStateSampling" to ""

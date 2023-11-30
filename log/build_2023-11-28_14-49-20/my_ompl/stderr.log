@@ -1,0 +1,15 @@
+[01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:[m[K In function ‘[01m[Kvoid planWithSimpleSetup()[m[K’:
+[01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:118:17:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kompl::base::ScopedState<>::StateType[m[K’ {aka ‘[01m[Kompl::base::State[m[K’} and ‘[01m[Kdouble[m[K’)
+  118 |    start()[0] = [01;31m[K1.0[m[K;
+      |                 [01;31m[K^~~[m[K
+In file included from [01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/install/ompl/include/ompl-1.6/ompl/base/SpaceInformation.h:40[m[K,
+                 from [01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:1[m[K:
+[01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/install/ompl/include/ompl-1.6/ompl/base/State.h:56:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst ompl::base::State& ompl::base::State::operator=(const ompl::base::State&)[m[K’ (deleted)
+   56 |             const State &[01;36m[Koperator[m[K=(const State &) = delete;
+      |                          [01;36m[K^~~~~~~~[m[K
+[01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/install/ompl/include/ompl-1.6/ompl/base/State.h:56:36:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kdouble[m[K’ to ‘[01m[Kconst ompl::base::State&[m[K’
+   56 |             const State &operator=([01;36m[Kconst State &[m[K) = delete;
+      |                                    [01;36m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/testRigidBodyPlanning.dir/build.make:76: CMakeFiles/testRigidBodyPlanning.dir/src/RigidBodyPlanning.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/testRigidBodyPlanning.dir/all] Error 2
+gmake: *** [Makefile:136: all] Error 2

@@ -1,0 +1,22 @@
+[01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:[m[K In function ‘[01m[Kvoid planWithSimpleSetup()[m[K’:
+[01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:117:12:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KsetX[m[K’ in ‘[01m[Kstart.ompl::base::ScopedState<>::operator()()[m[K’, which is of pointer type ‘[01m[Kompl::base::ScopedState<>::StateType*[m[K’ {aka ‘[01m[Kompl::base::State*[m[K’} (maybe you meant to use ‘[01m[K->[m[K’ ?)
+  117 |    start().[01;31m[KsetX[m[K(1.0);
+      |            [01;31m[K^~~~[m[K
+[01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:118:12:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KsetY[m[K’ in ‘[01m[Kstart.ompl::base::ScopedState<>::operator()()[m[K’, which is of pointer type ‘[01m[Kompl::base::ScopedState<>::StateType*[m[K’ {aka ‘[01m[Kompl::base::State*[m[K’} (maybe you meant to use ‘[01m[K->[m[K’ ?)
+  118 |    start().[01;31m[KsetY[m[K(1.0);
+      |            [01;31m[K^~~~[m[K
+[01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:119:12:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KsetZ[m[K’ in ‘[01m[Kstart.ompl::base::ScopedState<>::operator()()[m[K’, which is of pointer type ‘[01m[Kompl::base::ScopedState<>::StateType*[m[K’ {aka ‘[01m[Kompl::base::State*[m[K’} (maybe you meant to use ‘[01m[K->[m[K’ ?)
+  119 |    start().[01;31m[KsetZ[m[K(1.0);
+      |            [01;31m[K^~~~[m[K
+[01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:125:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass ompl::base::ScopedState<>[m[K’ has no member named ‘[01m[KsetX[m[K’
+  125 |    goal.[01;31m[KsetX[m[K(5.0);
+      |         [01;31m[K^~~~[m[K
+[01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:126:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass ompl::base::ScopedState<>[m[K’ has no member named ‘[01m[KsetY[m[K’
+  126 |    goal.[01;31m[KsetY[m[K(5.0);
+      |         [01;31m[K^~~~[m[K
+[01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:127:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass ompl::base::ScopedState<>[m[K’ has no member named ‘[01m[KsetZ[m[K’
+  127 |    goal.[01;31m[KsetZ[m[K(5.0);
+      |         [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/testRigidBodyPlanning.dir/build.make:76: CMakeFiles/testRigidBodyPlanning.dir/src/RigidBodyPlanning.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/testRigidBodyPlanning.dir/all] Error 2
+gmake: *** [Makefile:136: all] Error 2

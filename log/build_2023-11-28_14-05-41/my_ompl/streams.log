@@ -1,0 +1,11 @@
+[0.065s] Invoking command in '/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl': PS1=(virtualenv_Nikola) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(virtualenv_Nikola) /usr/bin/cmake --build /home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl -- -j16 -l16
+[0.087s] [35m[1mConsolidate compiler generated dependencies of target testRigidBodyPlanning[0m
+[0.097s] [ 50%] [32mBuilding CXX object CMakeFiles/testRigidBodyPlanning.dir/src/RigidBodyPlanning.cpp.o[0m
+[1.587s] [100%] [32m[1mLinking CXX executable /home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/bin/testRigidBodyPlanning[0m
+[1.655s] [100%] Built target testRigidBodyPlanning
+[1.661s] Invoked command in '/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl' returned '0': PS1=(virtualenv_Nikola) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(virtualenv_Nikola) /usr/bin/cmake --build /home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl -- -j16 -l16
+[1.679s] Invoking command in '/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl': PS1=(virtualenv_Nikola) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(virtualenv_Nikola) /usr/bin/cmake --install /home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl
+[1.683s] -- Install configuration: "Release"
+[1.683s] -- Installing: /home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/install/my_ompl/lib/my_ompl/testRigidBodyPlanning
+[1.684s] -- Set runtime path of "/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/install/my_ompl/lib/my_ompl/testRigidBodyPlanning" to ""
+[1.685s] Invoked command in '/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl' returned '0': PS1=(virtualenv_Nikola) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(virtualenv_Nikola) /usr/bin/cmake --install /home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl

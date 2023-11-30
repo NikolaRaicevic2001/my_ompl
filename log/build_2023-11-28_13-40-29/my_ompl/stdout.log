@@ -1,0 +1,7 @@
+[35m[1mConsolidate compiler generated dependencies of target testRigidBodyPlanning[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/testRigidBodyPlanning.dir/src/RigidBodyPlanning.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/bin/testRigidBodyPlanning[0m
+[100%] Built target testRigidBodyPlanning
+-- Install configuration: "Release"
+-- Installing: /home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/install/my_ompl/lib/my_ompl/testRigidBodyPlanning
+-- Set runtime path of "/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/install/my_ompl/lib/my_ompl/testRigidBodyPlanning" to ""

@@ -1,0 +1,7 @@
+[01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:[m[K In function ‘[01m[Kvoid planWithSimpleSetup()[m[K’:
+[01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:118:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing StateType = using StateType = class ompl::base::State[m[K’ {aka ‘[01m[Kclass ompl::base::State[m[K’} has no member named ‘[01m[KSE3StateSpace[m[K’
+  118 |    start->[01;31m[KSE3StateSpace[m[K().setX(1.0);
+      |           [01;31m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/testRigidBodyPlanning.dir/build.make:76: CMakeFiles/testRigidBodyPlanning.dir/src/RigidBodyPlanning.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/testRigidBodyPlanning.dir/all] Error 2
+gmake: *** [Makefile:136: all] Error 2

@@ -39,7 +39,10 @@ INCLUDE_DIRECTORIES(${Boost_INCLUDE_DIRS})
 add_executable(testRigidBodyPlanning src/RigidBodyPlanning.cpp)
 target_link_libraries(testRigidBodyPlanning ${OMPL_LIBRARIES} ${Boost_LIBRARIES})
 
-install(TARGETS testRigidBodyPlanning
+add_executable(testStateSampling src/StateSampling.cpp)
+target_link_libraries(testStateSampling ${OMPL_LIBRARIES} ${Boost_LIBRARIES})
+
+install(TARGETS testRigidBodyPlanning testStateSampling
   DESTINATION lib/${PROJECT_NAME})
 
 

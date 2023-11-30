@@ -1,0 +1,11 @@
+[0.067s] Invoking command in '/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl': PS1=(virtualenv_Nikola) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(virtualenv_Nikola) /usr/bin/cmake --build /home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl -- -j16 -l16
+[0.090s] [35m[1mConsolidate compiler generated dependencies of target testRigidBodyPlanning[0m
+[0.101s] [ 50%] [32mBuilding CXX object CMakeFiles/testRigidBodyPlanning.dir/src/RigidBodyPlanning.cpp.o[0m
+[0.984s] [01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:[m[K In function ‘[01m[Kvoid planWithSimpleSetup()[m[K’:
+[0.984s] [01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:118:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing StateType = using StateType = class ompl::base::State[m[K’ {aka ‘[01m[Kclass ompl::base::State[m[K’} has no member named ‘[01m[KSE3StateSpace[m[K’
+[0.984s]   118 |    start->[01;31m[KSE3StateSpace[m[K.setX(1.0);
+[0.984s]       |           [01;31m[K^~~~~~~~~~~~~[m[K
+[1.138s] gmake[2]: *** [CMakeFiles/testRigidBodyPlanning.dir/build.make:76: CMakeFiles/testRigidBodyPlanning.dir/src/RigidBodyPlanning.cpp.o] Error 1
+[1.138s] gmake[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/testRigidBodyPlanning.dir/all] Error 2
+[1.139s] gmake: *** [Makefile:136: all] Error 2
+[1.140s] Invoked command in '/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl' returned '2': PS1=(virtualenv_Nikola) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(virtualenv_Nikola) /usr/bin/cmake --build /home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl -- -j16 -l16

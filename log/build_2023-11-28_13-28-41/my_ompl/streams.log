@@ -1,0 +1,44 @@
+[0.064s] Invoking command in '/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl': PS1=(virtualenv_Nikola) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(virtualenv_Nikola) /usr/bin/cmake /home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp -DCMAKE_INSTALL_PREFIX=/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/install/my_ompl
+[0.128s] -- The C compiler identification is GNU 11.4.0
+[0.184s] -- The CXX compiler identification is GNU 11.4.0
+[0.189s] -- Detecting C compiler ABI info
+[0.233s] -- Detecting C compiler ABI info - done
+[0.239s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.239s] -- Detecting C compile features
+[0.240s] -- Detecting C compile features - done
+[0.242s] -- Detecting CXX compiler ABI info
+[0.292s] -- Detecting CXX compiler ABI info - done
+[0.299s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.300s] -- Detecting CXX compile features
+[0.300s] -- Detecting CXX compile features - done
+[0.309s] -- Found ompl: /home/erl-tianyu/Nikola_ws/ros2_ws/install/ompl/include/ompl-1.6;/usr/include;/usr/include/eigen3  
+[0.320s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem program_options 
+[0.321s] -- Configuring done
+[0.323s] -- Generating done
+[0.324s] -- Build files have been written to: /home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl
+[0.326s] Invoked command in '/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl' returned '0': PS1=(virtualenv_Nikola) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(virtualenv_Nikola) /usr/bin/cmake /home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp -DCMAKE_INSTALL_PREFIX=/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/install/my_ompl
+[0.327s] Invoking command in '/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl': PS1=(virtualenv_Nikola) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(virtualenv_Nikola) /usr/bin/cmake --build /home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl -- -j16 -l16
+[0.357s] [ 50%] [32mBuilding CXX object CMakeFiles/testRigidBodyPlanning.dir/src/RigidBodyPlanning.cpp.o[0m
+[1.297s] [01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:[m[K In function ‘[01m[Kvoid planWithSimpleSetup()[m[K’:
+[1.297s] [01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:117:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass ompl::base::ScopedState<>[m[K’ has no member named ‘[01m[KsetX[m[K’
+[1.297s]   117 |    start.[01;31m[KsetX[m[K(1.0);
+[1.297s]       |          [01;31m[K^~~~[m[K
+[1.297s] [01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:118:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass ompl::base::ScopedState<>[m[K’ has no member named ‘[01m[KsetY[m[K’
+[1.297s]   118 |    start.[01;31m[KsetY[m[K(1.0);
+[1.297s]       |          [01;31m[K^~~~[m[K
+[1.297s] [01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:119:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass ompl::base::ScopedState<>[m[K’ has no member named ‘[01m[KsetZ[m[K’
+[1.297s]   119 |    start.[01;31m[KsetZ[m[K(1.0);
+[1.297s]       |          [01;31m[K^~~~[m[K
+[1.297s] [01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:125:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass ompl::base::ScopedState<>[m[K’ has no member named ‘[01m[KsetX[m[K’
+[1.297s]   125 |    goal.[01;31m[KsetX[m[K(5.0);
+[1.297s]       |         [01;31m[K^~~~[m[K
+[1.297s] [01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:126:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass ompl::base::ScopedState<>[m[K’ has no member named ‘[01m[KsetY[m[K’
+[1.297s]   126 |    goal.[01;31m[KsetY[m[K(5.0);
+[1.298s]       |         [01;31m[K^~~~[m[K
+[1.298s] [01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:127:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass ompl::base::ScopedState<>[m[K’ has no member named ‘[01m[KsetZ[m[K’
+[1.298s]   127 |    goal.[01;31m[KsetZ[m[K(5.0);
+[1.298s]       |         [01;31m[K^~~~[m[K
+[1.455s] gmake[2]: *** [CMakeFiles/testRigidBodyPlanning.dir/build.make:76: CMakeFiles/testRigidBodyPlanning.dir/src/RigidBodyPlanning.cpp.o] Error 1
+[1.455s] gmake[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/testRigidBodyPlanning.dir/all] Error 2
+[1.455s] gmake: *** [Makefile:136: all] Error 2
+[1.456s] Invoked command in '/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl' returned '2': PS1=(virtualenv_Nikola) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(virtualenv_Nikola) /usr/bin/cmake --build /home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl -- -j16 -l16

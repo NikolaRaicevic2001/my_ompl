@@ -1,0 +1,40 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ompl: /home/erl-tianyu/Nikola_ws/ros2_ws/install/ompl/include/ompl-1.6;/usr/include;/usr/include/eigen3  
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem program_options 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl
+[ 50%] [32mBuilding CXX object CMakeFiles/testRigidBodyPlanning.dir/src/RigidBodyPlanning.cpp.o[0m
+[01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:[m[K In function ‘[01m[Kvoid planWithSimpleSetup()[m[K’:
+[01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:117:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass ompl::base::ScopedState<>[m[K’ has no member named ‘[01m[KsetX[m[K’
+  117 |    start.[01;31m[KsetX[m[K(1.0);
+      |          [01;31m[K^~~~[m[K
+[01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:118:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass ompl::base::ScopedState<>[m[K’ has no member named ‘[01m[KsetY[m[K’
+  118 |    start.[01;31m[KsetY[m[K(1.0);
+      |          [01;31m[K^~~~[m[K
+[01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:119:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass ompl::base::ScopedState<>[m[K’ has no member named ‘[01m[KsetZ[m[K’
+  119 |    start.[01;31m[KsetZ[m[K(1.0);
+      |          [01;31m[K^~~~[m[K
+[01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:125:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass ompl::base::ScopedState<>[m[K’ has no member named ‘[01m[KsetX[m[K’
+  125 |    goal.[01;31m[KsetX[m[K(5.0);
+      |         [01;31m[K^~~~[m[K
+[01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:126:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass ompl::base::ScopedState<>[m[K’ has no member named ‘[01m[KsetY[m[K’
+  126 |    goal.[01;31m[KsetY[m[K(5.0);
+      |         [01;31m[K^~~~[m[K
+[01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:127:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass ompl::base::ScopedState<>[m[K’ has no member named ‘[01m[KsetZ[m[K’
+  127 |    goal.[01;31m[KsetZ[m[K(5.0);
+      |         [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/testRigidBodyPlanning.dir/build.make:76: CMakeFiles/testRigidBodyPlanning.dir/src/RigidBodyPlanning.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/testRigidBodyPlanning.dir/all] Error 2
+gmake: *** [Makefile:136: all] Error 2

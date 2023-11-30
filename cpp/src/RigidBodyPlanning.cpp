@@ -1,6 +1,7 @@
 #include <ompl/base/SpaceInformation.h>
 #include <ompl/base/spaces/SE3StateSpace.h>
 #include <ompl/geometric/planners/rrt/RRTConnect.h>
+#include <ompl/geometric/planners/rrt/LazyRRT.h>
 #include <ompl/geometric/SimpleSetup.h>
 
 #include <ompl/config.h>
@@ -60,7 +61,7 @@ void plan()
    pdef->setStartAndGoalStates(start, goal);
 
    // create a planner for the defined space
-   auto planner(std::make_shared<og::RRTConnect>(si));
+   auto planner(std::make_shared<og::LazyRRT>(si));
 
    // set the problem we are trying to solve for the planner
    planner->setProblemDefinition(pdef);
@@ -99,8 +100,8 @@ void planWithSimpleSetup()
 
    // set the bounds for the R^3 part of SE(3)
    ob::RealVectorBounds bounds(3);
-   bounds.setLow(-1);
-   bounds.setHigh(1);
+   bounds.setLow(-10);
+   bounds.setHigh(10);
 
    space->setBounds(bounds);
 

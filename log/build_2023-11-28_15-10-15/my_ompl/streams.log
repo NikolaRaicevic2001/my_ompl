@@ -1,0 +1,18 @@
+[0.063s] Invoking command in '/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl': PS1=(virtualenv_Nikola) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(virtualenv_Nikola) /usr/bin/cmake --build /home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl -- -j16 -l16
+[0.083s] -- Configuring done
+[0.084s] [31mCMake Error at CMakeLists.txt:42 (add_executable):
+[0.084s]   Cannot find source file:
+[0.084s] 
+[0.084s]     src/testStateSampling.cpp
+[0.084s] 
+[0.084s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[0.084s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[0.084s] 
+[0.084s] [0m
+[0.084s] [31mCMake Error at CMakeLists.txt:42 (add_executable):
+[0.084s]   No SOURCES given to target: testStateSampling
+[0.085s] 
+[0.085s] [0m
+[0.085s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[0.085s] gmake: *** [Makefile:228: cmake_check_build_system] Error 1
+[0.086s] Invoked command in '/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl' returned '2': PS1=(virtualenv_Nikola) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(virtualenv_Nikola) /usr/bin/cmake --build /home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl -- -j16 -l16

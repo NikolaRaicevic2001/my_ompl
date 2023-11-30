@@ -1,0 +1,27 @@
+[0.064s] Invoking command in '/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl': PS1=(virtualenv_Nikola) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(virtualenv_Nikola) /usr/bin/cmake --build /home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl -- -j16 -l16
+[0.086s] [35m[1mConsolidate compiler generated dependencies of target testRigidBodyPlanning[0m
+[0.096s] [ 50%] [32mBuilding CXX object CMakeFiles/testRigidBodyPlanning.dir/src/RigidBodyPlanning.cpp.o[0m
+[0.963s] [01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:[m[K In function ‘[01m[Kvoid plan()[m[K’:
+[0.963s] [01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:63:38:[m[K [01;31m[Kerror: [m[K‘[01m[KPRMstar[m[K’ is not a member of ‘[01m[Kog[m[K’
+[0.963s]    63 |    auto planner(std::make_shared<og::[01;31m[KPRMstar[m[K>(si));
+[0.963s]       |                                      [01;31m[K^~~~~~~[m[K
+[0.964s] [01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:63:38:[m[K [01;31m[Kerror: [m[K‘[01m[KPRMstar[m[K’ is not a member of ‘[01m[Kog[m[K’
+[0.964s] [01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:63:46:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >(std::shared_ptr<ompl::base::SpaceInformation>&)[m[K’
+[0.964s]    63 |    auto planner([01;31m[Kstd::make_shared<og::PRMstar>(si)[m[K);
+[0.964s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[0.964s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[0.964s]                  from [01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/install/ompl/include/ompl-1.6/ompl/util/ClassForward.h:40[m[K,
+[0.964s]                  from [01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/install/ompl/include/ompl-1.6/ompl/base/StateValidityChecker.h:41[m[K,
+[0.964s]                  from [01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/install/ompl/include/ompl-1.6/ompl/base/SpaceInformation.h:41[m[K,
+[0.964s]                  from [01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:1[m[K:
+[0.964s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+[0.964s]   875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+[0.964s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[0.964s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[0.964s] [01m[K/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/cpp/src/RigidBodyPlanning.cpp:63:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[0.964s]    63 |    auto planner([01;31m[Kstd::make_shared<og::PRMstar>(si)[m[K);
+[0.964s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[1.110s] gmake[2]: *** [CMakeFiles/testRigidBodyPlanning.dir/build.make:76: CMakeFiles/testRigidBodyPlanning.dir/src/RigidBodyPlanning.cpp.o] Error 1
+[1.111s] gmake[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/testRigidBodyPlanning.dir/all] Error 2
+[1.111s] gmake: *** [Makefile:136: all] Error 2
+[1.112s] Invoked command in '/home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl' returned '2': PS1=(virtualenv_Nikola) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(virtualenv_Nikola) /usr/bin/cmake --build /home/erl-tianyu/Nikola_ws/ros2_ws/src/my_ompl/build/my_ompl -- -j16 -l16
