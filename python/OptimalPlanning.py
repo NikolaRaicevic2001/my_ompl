@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 
-# Author: Luis G. Torres, Mark Moll
-
 import sys
 try:
    from ompl import util as ou
@@ -22,20 +20,25 @@ import argparse
 class ValidityChecker(ob.StateValidityChecker):
    # Returns whether the given state's position overlaps the
    # circular obstacle
+      # Obstacles
+   obstacles = [None] * 3
+   obstacles[0] = [2.2, 2.2, 3.25]
+   obstacles[1] = [9.0, 5.5, 4.25]
+   obstacles[2] = [0.0, 4.2, 4.25]
+
    def isValid(self, state):
-       return self.clearance(state) > 0.0
+       return self.clearance(state, self.obstacles[0][0], self.obstacles[0][1], self.obstacles[0][2]) > 0.0 and self.clearance(state, self.obstacles[1][0], self.obstacles[1][1], self.obstacles[1][2]) > 0.0 and self.clearance(state, self.obstacles[2][0], self.obstacles[2][1], self.obstacles[2][2]) > 0.0
 
    # Returns the distance from the given state's position to the
    # boundary of the circular obstacle.
-   def clearance(self, state):
+   def clearance(self, state, centre_x, centre_y, radius):
        # Extract the robot's (x,y) position from its state
        x = state[0]
        y = state[1]
 
        # Distance formula between two points, offset by the circle's
        # radius
-       return sqrt((x-0.5)*(x-0.5) + (y-0.5)*(y-0.5)) - 0.25
-
+       return sqrt((x-centre_x)*(x-centre_x) + (y-centre_y)*(y-centre_y)) - radius
 
 
 def getPathLengthObjective(si):
@@ -44,7 +47,7 @@ def getPathLengthObjective(si):
 
 def getThresholdPathLengthObj(si):
    obj = ob.PathLengthOptimizationObjective(si)
-   obj.setCostThreshold(ob.Cost(1.51))
+   obj.setCostThreshold(ob.Cost(3))
    return obj
 
 
@@ -128,7 +131,7 @@ def plan(runTime, plannerType, objectiveType, fname):
    space = ob.RealVectorStateSpace(2)
 
    # Set the bounds of space to be in [0,1].
-   space.setBounds(0.0, 10.0)
+   space.setBounds(-10.0, 10.0)
 
    # Construct a space information instance for this state space
    si = ob.SpaceInformation(space)
@@ -142,14 +145,14 @@ def plan(runTime, plannerType, objectiveType, fname):
    # Set our robot's starting state to be the bottom-left corner of
    # the environment, or (0,0).
    start = ob.State(space)
-   start[0] = 0.0
-   start[1] = 0.0
+   start[0] = -1.0
+   start[1] = -1.0
 
    # Set our robot's goal state to be the top-right corner of the
    # environment, or (1,1).
    goal = ob.State(space)
-   goal[0] = 5.0
-   goal[1] = 1.0
+   goal[0] = 10.0
+   goal[1] = 10.0
 
    # Create a problem instance
    pdef = ob.ProblemDefinition(si)
@@ -179,6 +182,19 @@ def plan(runTime, plannerType, objectiveType, fname):
            optimizingPlanner.getName(), \
            pdef.getSolutionPath().length(), \
            pdef.getSolutionPath().cost(pdef.getOptimizationObjective()).value()))
+
+       # print the path to a file
+       file = open('path_2.txt', 'w')
+       file.write(pdef.getSolutionPath().printAsMatrix())
+       file.close()
+
+       file = open('obstacles.txt', 'w')
+       for i in range(0, len(validityChecker.obstacles)):
+        file.write(str(validityChecker.obstacles[i][0]) + ' ')
+        file.write(str(validityChecker.obstacles[i][1]) + ' ')
+        file.write(str(validityChecker.obstacles[i][2]) + ' ')
+        file.write('\n')
+       file.close()
 
        # If a filename was specified, output the path as a matrix to
        # that file for visualization
@@ -227,7 +243,7 @@ if __name__ == "__main__":
        ou.setLogLevel(ou.LOG_DEBUG)
    else:
        ou.OMPL_ERROR("Invalid log-level integer.")
-
+   
    # Solve the planning problem
    plan(args.runtime, args.planner, args.objective, args.file)
 
